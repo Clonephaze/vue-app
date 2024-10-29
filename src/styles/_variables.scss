@@ -1,8 +1,18 @@
-$primary-color: #42b883;
-$secondary-color: #35495e;
+$bg-color-light: lch(94 0 0);
+$bg-color-dark: lch(35 0 0);
+
+$primary-color-light: lch(50 70 310);
+$primary-color-dark: lch(30 70 310);
+$secondary-color-light: lch(70 35 310);
+$secondary-color-dark: lch(40 35 310);
+
+$text-color-light: lch(0 0 0);
+$text-color-dark: lch(95 0 0);
+
+
 
 // Typography
-$font-family-base: 'Arial', sans-serif;
+$font-family-base: "Arial", sans-serif;
 $font-size-base: 16px;
 
 // Breakpoints

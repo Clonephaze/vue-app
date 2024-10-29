@@ -1,18 +1,32 @@
-@forward 'variables';
-@forward 'mixins';
-
 // src/styles/main.scss
-@use 'index' as *;
+@use "index" as *; // This imports all my style sheets
 
+// Light mode/Dark mode Theme Variables
+:root {
+    --background-color: #{$bg-color-light};
+    --primary-color: #{$primary-color-light};
+    --secondary-color: #{$secondary-color-light};
+    --text-color: #{$text-color-light};
+}
+
+body.dark-mode {
+    --background-color: #{$bg-color-dark};
+    --primary-color: #{$primary-color-dark};
+    --secondary-color: #{$secondary-color-dark};
+    --text-color: #{$text-color-dark};
+}
+
+// Global Styles
 body {
-  font-family: $font-family-base;
-  font-size: $font-size-base;
-  margin: 0;
-  padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: $font-size-base;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
